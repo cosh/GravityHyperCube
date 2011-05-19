@@ -6,6 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using cosh.HyperCube.Nodes;
+using System.Threading;
 
 namespace cosh.HyperCube
 {
