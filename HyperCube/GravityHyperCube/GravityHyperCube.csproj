@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GravityHyperCube.cs" />
+    <Compile Include="Nodes\DataNode.cs" />
+    <Compile Include="Nodes\ExpressionNode.cs" />
+    <Compile Include="Nodes\INode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

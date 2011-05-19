@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using cosh.HyperCube.Nodes;
 
 namespace cosh.HyperCube
 {
@@ -12,11 +13,18 @@ namespace cosh.HyperCube
     {
         #region data
 
+        private int _dimension;
+        private readonly ConcurrentDictionary<BitArray, INode> _nodes;
 
         #endregion
 
         #region Constructor
 
+        public GravityHyperCube()
+        {
+            _dimension = 0;
+            _nodes = new ConcurrentDictionary<BitArray, INode>();
+        }
 
         #endregion
 
@@ -24,7 +32,7 @@ namespace cosh.HyperCube
 
         public void InsertData(string myDataName, byte[] myData)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException();            
         }
 
         public void InsertExpression(string myExpressionName, Expression myExpression)
@@ -33,11 +41,6 @@ namespace cosh.HyperCube
         }
 
         #endregion
-
-
-
-
-
 
         //private int _dimension;
         //private ConcurrentDictionary<BitArray, Node> _nodes;
