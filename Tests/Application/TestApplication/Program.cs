@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-
-namespace cosh.HyperCube.Test.Application
+﻿namespace cosh.HyperCube.Test.Application
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-           
         }
     }
 }

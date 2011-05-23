@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Linq.Expressions;
+﻿using System;
 using System.Collections;
+using System.Linq.Expressions;
 
 namespace cosh.HyperCube.Node
 {
@@ -47,7 +47,7 @@ namespace cosh.HyperCube.Node
 
         public Expression Execute()
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         #endregion
