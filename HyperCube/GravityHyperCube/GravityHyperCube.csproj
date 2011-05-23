@@ -8,7 +8,7 @@
     <ProjectGuid>{C4143116-7545-405F-BF61-2BAEF8D90049}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>cosh.HyperCube.Test.Application</RootNamespace>
+    <RootNamespace>cosh.HyperCube</RootNamespace>
     <AssemblyName>GravityHyperCube</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -41,9 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GravityHyperCube.cs" />
-    <Compile Include="Nodes\DataNode.cs" />
-    <Compile Include="Nodes\ExpressionNode.cs" />
-    <Compile Include="Nodes\INode.cs" />
+    <Compile Include="Node\Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
