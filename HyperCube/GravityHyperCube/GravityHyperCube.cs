@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
+using cosh.HyperCube.Node;
+using System.Collections.Generic;
 
 namespace cosh.HyperCube
 {
@@ -17,14 +19,25 @@ namespace cosh.HyperCube
 
         #endregion
 
+
         #region IGravityHyperCube Members
 
-        public void Insert(string myExpressionName, Expression myExpression)
+        public long Dimension
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+        public TResult Insert<TResult>(string myExpressionName, Expression myExpression, Converter<INode, TResult> myConverter)
         {
             throw new NotImplementedException();
         }
 
-        public Expression Execute(string myExpressionName)
+        public TResult Execute<TResult>(string myExpressionName, Converter<Expression, TResult> myConverter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public TResult Broadcast<TResult>(Converter<INode, bool> myFilter, Converter<IEnumerable<Expression>, TResult> myConverter)
         {
             throw new NotImplementedException();
         }
